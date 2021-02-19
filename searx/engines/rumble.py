@@ -27,12 +27,6 @@ base_url = 'https://rumble.com'
 # https://rumble.com/search/video?q=searx&page=3
 search_url = base_url + '/search/video?{query}&page={pageno}'
 
-# cats
-# https://rumble.com/embed/vkgt9/?pub=7h2v5   iframe url
-# <iframe class="rumble" width="640" height="360" src="https://rumble.com/embed/vkgt9/?pub=7h2v5" frameborder="0" allowfullscreen></iframe>
-embedded_url = '<iframe class="rumble" width="640" height="360" src="https://rumble.com/embed/v{video_id}/?pub=7h2v5 ' \
-               'frameborder="0" allowfullscreen></iframe>'
-
 url_xpath = './/a[@class="video-item--a"]/@href'
 thumbnail_xpath = './/img[@class="video-item--img"]/@src'
 title_xpath = './/h3[@class="video-item--title"]'
