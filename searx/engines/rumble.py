@@ -37,7 +37,7 @@ rumbles_xpath = './/span[@class="video-item--meta video-item--rumbles"]/@data-va
 author_xpath = './/div[@class="ellipsis-1"]'
 length_xpath = './/span[@class="video-item--duration"]/@data-value'
 
-# do search-request
+
 def request(query, params):
     params['url'] = search_url.format(pageno=params['pageno'], query=urlencode({'q': query}))
     return params
@@ -79,4 +79,3 @@ def response(resp):
             'thumbnail': thumbnail,
         })
     return results
-
